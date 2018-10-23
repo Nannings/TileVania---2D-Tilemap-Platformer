@@ -12,11 +12,13 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigidbody2D;
     Animator animator;
+    Collider2D collider2D;
 
     private void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        collider2D = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -38,6 +40,9 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
+        if (!collider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
+            return;
+
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
