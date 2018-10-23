@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 212942344759738748}
   - component: {fileID: 50850804804469638}
   - component: {fileID: 70796267299402022}
+  - component: {fileID: 114862950970833760}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -57,11 +58,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 10
+  m_Material: {fileID: 6200000, guid: 2559e7176c61d5a44bb94c2b606bdc1d, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &70796267299402022
 CapsuleCollider2D:
@@ -96,6 +97,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114862950970833760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995440835057188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e8895eaead3b14aa0ac27052aa83b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 8
+  jumpSpeed: 24
 --- !u!212 &212942344759738748
 SpriteRenderer:
   m_ObjectHideFlags: 1
