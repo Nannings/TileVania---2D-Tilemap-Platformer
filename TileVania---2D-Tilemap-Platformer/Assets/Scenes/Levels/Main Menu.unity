@@ -8831,15 +8831,15 @@ Prefab:
     - target: {fileID: 20599742654652054, guid: d57ae8534096b4447b168a76db3d74b6,
         type: 2}
       propertyPath: orthographic size
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4501665637476208, guid: d57ae8534096b4447b168a76db3d74b6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.053905
+      value: -1.8600001
       objectReference: {fileID: 0}
     - target: {fileID: 4501665637476208, guid: d57ae8534096b4447b168a76db3d74b6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.4039054
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: 4159422933084410, guid: d57ae8534096b4447b168a76db3d74b6, type: 2}
       propertyPath: m_LocalPosition.x
